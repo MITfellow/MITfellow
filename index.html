@@ -3,100 +3,140 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Building Simple Web Things</title>
-  <meta name="description" content="Simple GitHub Pages profile: who I am, what I'm building, and how to reach me." />
+  <title>MITfellow — Building AI Workforce</title>
+  <meta name="description" content="MITfellow (Sameer Choudhary). Minimal home base: building AI workforce tools, fast and calm." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
+
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="logo" href="#top">YN<span>.</span></a>
+      <a class="logo" href="#top" aria-label="MITfellow home">MF<span>●</span></a>
       <nav aria-label="Primary">
-        <a href="#about">About</a>
         <a href="#building">Building</a>
-        <a href="#skills">Skills</a>
+        <a href="#now">Now</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn small" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub ↗</a>
+      <p class="live"><span class="dot" aria-hidden="true"></span><span id="clock">—</span></p>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero wrap">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Your Name</h1>
-      <p class="subtitle">I build simple, fast websites and small tools. Currently learning in public on GitHub.</p>
-      <div class="actions">
-        <a class="btn" href="#building">What I'm building</a>
-        <a class="btn ghost" href="https://github.com/YOUR-USERNAME?tab=repositories" target="_blank" rel="noopener">View repos</a>
+    <section class="hero wrap" aria-label="Intro">
+      <p class="eyebrow reveal">MITfellow — Sameer Choudhary</p>
+      <h1>
+        <span class="line reveal">Simple tools.</span>
+        <span class="line reveal d1">Surprising <em>calm.</em></span>
+      </h1>
+      <p class="subtitle reveal d2">We’re building an <strong>AI workforce</strong> — small agents that do real work, without the noise. This page is the home base: what’s live, what’s next, where’s the code.</p>
+      <div class="actions reveal d3">
+        <a class="btn" href="#building">See what’s building <span aria-hidden="true">↓</span></a>
+        <a class="btn ghost" href="https://github.com/MITfellow" target="_blank" rel="noopener">github.com/MITfellow ↗</a>
       </div>
-      <dl class="stats">
-        <div><dt>Focus</dt><dd>Frontend + GitHub Pages</dd></div>
-        <div><dt>Now</dt><dd>Portfolio v1</dd></div>
-        <div><dt>Open to</dt><dd>Feedback & collabs</dd></div>
-      </dl>
-    </section>
-
-    <section id="about" class="wrap section">
-      <h2>About</h2>
-      <p>
-        I'm a builder sharing work on GitHub. This page is my home base:
-        who I am, what I'm working on, and where to find the code.
-        Replace this text with 2–3 sentences about you.
-      </p>
+      <button class="whisper reveal d4" id="whisper" aria-live="polite">hold me for a surprise → <span>0%</span></button>
+      <p class="typed" aria-label="Builder log"><span aria-hidden="true">$</span> <span id="typed"></span><span class="caret" aria-hidden="true">▍</span></p>
     </section>
 
     <section id="building" class="wrap section">
-      <h2>What we're building</h2>
-      <p class="muted">Small projects, documented simply. Each card links to a repo — swap in your real ones.</p>
+      <div class="sec-head reveal">
+        <h2>What we’re building</h2>
+        <p>Three bets. One ships, two simmer.</p>
+      </div>
       <div class="grid">
-        <article class="card">
-          <h3>1. This GitHub Page</h3>
-          <p>A minimal light portfolio hosted free on GitHub Pages. HTML + CSS only, no build step.</p>
-          <p class="tags"><span>HTML</span><span>CSS</span><span>Pages</span></p>
-          <a href="https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io" target="_blank" rel="noopener">Source →</a>
+        <article class="card reveal">
+          <p class="num">01</p>
+          <h3>This page</h3>
+          <p>Zero-build portfolio on GitHub Pages. HTML + CSS + 20 lines of JS. Loads instantly, reads easily.</p>
+          <p class="tags"><span>live</span><span>pages</span></p>
+          <a href="https://mitfellow.github.io/" target="_blank" rel="noopener">Open live →</a>
         </article>
-        <article class="card">
-          <h3>2. Project Two</h3>
-          <p>Describe what it does in one line. Example: a to-do app, notes site, or API experiment.</p>
-          <p class="tags"><span>JavaScript</span><span>Beginner-friendly</span></p>
-          <a href="https://github.com/YOUR-USERNAME?tab=repositories" target="_blank" rel="noopener">Source →</a>
+        <article class="card reveal d1">
+          <p class="num">02</p>
+          <h3>AI workforce kit</h3>
+          <p>Small agents for research, drafts, follow-ups. Human approves, agents do the grind.</p>
+          <p class="tags"><span>wip</span><span>agents</span></p>
+          <a href="https://github.com/MITfellow?tab=repositories" target="_blank" rel="noopener">Watch repos →</a>
         </article>
-        <article class="card">
-          <h3>3. Project Three</h3>
-          <p>What problem does it solve? Keep it short. Link to live demo + repo when ready.</p>
-          <p class="tags"><span>Learning</span><span>WIP</span></p>
-          <a href="https://github.com/YOUR-USERNAME?tab=repositories" target="_blank" rel="noopener">Source →</a>
+        <article class="card invert reveal d2">
+          <p class="num">03</p>
+          <h3>The surprise</h3>
+          <p id="surprise-text">Hold the button up top… something quiet happens here.</p>
+          <p class="tags"><span>???</span></p>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="wrap section">
-      <h2>Skills</h2>
-      <ul class="pills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>GitHub Pages</li>
+    <section id="now" class="wrap section now reveal">
+      <h2>Now</h2>
+      <ul>
+        <li><strong>Shipping:</strong> mitfellow.github.io v2 — this minimal surprise build</li>
+        <li><strong>Learning:</strong> in public, small commits, honest READMEs</li>
+        <li><strong>Open to:</strong> feedback, collabs, weird agent ideas</li>
       </ul>
     </section>
 
-    <section id="contact" class="wrap section">
-      <h2>Contact</h2>
-      <p>Simplest way: open an issue or reach out below. Replace USERNAME with yours.</p>
+    <section id="contact" class="wrap section contact reveal">
+      <h2>Say hi</h2>
+      <p>Fastest: open an issue. Calmest: visit the profile.</p>
       <div class="actions">
-        <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">github.com/YOUR-USERNAME</a>
-        <a class="btn ghost" href="mailto:you@example.com">you@example.com</a>
+        <a class="btn" href="https://github.com/MITfellow" target="_blank" rel="noopener">github.com/MITfellow</a>
+        <a class="btn ghost" href="https://x.com/MITfellow?s=20" target="_blank" rel="noopener">X / Twitter ↗</a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap foot">
-      <small>© 2026 Your Name · Built with HTML/CSS · Hosted on GitHub Pages</small>
-      <small><a href="profile-README.md">Profile README template</a></small>
+      <small>© 2026 MITfellow · minimal + calm · on GitHub Pages</small>
+      <small><a href="#top">back to top ↑</a></small>
     </div>
   </footer>
+
+<script>
+(function(){
+  var clock = document.getElementById('clock');
+  function tick(){
+    try{
+      clock.textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}) + ' local · building';
+    }catch(e){ clock.textContent = 'building'; }
+  }
+  tick(); setInterval(tick, 20000);
+
+  var lines = ['ship small. learn in public.', 'agents do grind. humans decide.', 'minimal page. maximal calm.'];
+  var el = document.getElementById('typed'), li = 0, ci = 0, del = false;
+  function type(){
+    var s = lines[li];
+    el.textContent = s.slice(0, ci);
+    if(!del){ ci++; if(ci > s.length){ del = true; return void setTimeout(type, 1400); } }
+    else{ ci--; if(ci === 0){ del = false; li = (li+1)%lines.length; } }
+    setTimeout(type, del ? 22 : 46);
+  }
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches) type();
+  else el.textContent = lines[0];
+
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.reveal').forEach(function(n){ io.observe(n); });
+
+  var btn = document.getElementById('whisper'), pct = btn.querySelector('span'),
+      t = document.getElementById('surprise-text'), hold = null, p = 0;
+  function start(e){ e.preventDefault(); var t0 = Date.now();
+    hold = setInterval(function(){
+      p = Math.min(100, Math.round((Date.now()-t0)/12));
+      pct.textContent = p + '%';
+      document.body.classList.toggle('lit', p > 40);
+      if(p >= 100){ clearInterval(hold);
+        t.textContent = 'Surprise: less is more. You held on — most scroll past. The AI workforce we’re building works the same: quiet, patient, then done.';
+        btn.innerHTML = 'noted. thank you. ✓';
+      }
+    }, 50);
+  }
+  function cancel(){ clearInterval(hold); if(p < 100){ p = 0; pct.textContent = '0%'; document.body.classList.remove('lit'); } }
+  btn.addEventListener('pointerdown', start);
+  ['pointerup','pointerleave','pointercancel'].forEach(function(ev){ btn.addEventListener(ev, cancel); });
+})();
+</script>
 </body>
 </html>
