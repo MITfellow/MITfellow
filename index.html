@@ -3,139 +3,136 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MITfellow — Building AI Workforce</title>
-  <meta name="description" content="MITfellow (Sameer Choudhary). Minimal home base: building AI workforce tools, fast and calm." />
+  <title>MITFELLOW // 2200 Uplink</title>
+  <meta name="description" content="MITfellow year-2200 uplink. Human intent, machine crew — AI workforce modules." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="scan" aria-hidden="true"></div>
 
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="#top" aria-label="MITfellow home">MF<span>●</span></a>
+  <header class="hud">
+    <div class="wrap hud-in">
+      <a class="brand" href="#top">MITFELLOW<span>//2200</span></a>
       <nav aria-label="Primary">
-        <a href="#building">Building</a>
-        <a href="#now">Now</a>
-        <a href="#contact">Contact</a>
+        <a href="#modules">Modules</a>
+        <a href="#systems">Systems</a>
+        <a href="#uplink">Uplink</a>
       </nav>
-      <p class="live"><span class="dot" aria-hidden="true"></span><span id="clock">—</span></p>
+      <p class="sys"><span class="pulse" aria-hidden="true"></span>SYS.ONLINE · <span id="clock">--:--</span></p>
     </div>
+    <div class="beam" aria-hidden="true"></div>
   </header>
 
   <main id="top">
-    <section class="hero wrap" aria-label="Intro">
-      <p class="eyebrow reveal">MITfellow — Sameer Choudhary</p>
+    <section class="hero wrap">
+      <p class="eyebrow reveal">◈ YEAR 2200 TRANSMISSION · SAMEER / MITFELLOW</p>
       <h1>
-        <span class="line reveal">Simple tools.</span>
-        <span class="line reveal d1">Surprising <em>calm.</em></span>
+        <span class="reveal">HUMAN INTENT.</span>
+        <span class="reveal d1 neon">MACHINE <em>CREW.</em></span>
       </h1>
-      <p class="subtitle reveal d2">We’re building an <strong>AI workforce</strong> — small agents that do real work, without the noise. This page is the home base: what’s live, what’s next, where’s the code.</p>
-      <div class="actions reveal d3">
-        <a class="btn" href="#building">See what’s building <span aria-hidden="true">↓</span></a>
-        <a class="btn ghost" href="https://github.com/MITfellow" target="_blank" rel="noopener">github.com/MITfellow ↗</a>
+      <p class="sub reveal d2">AI workforce modules on active duty — research, drafts, follow-through. Humans command. Machines execute. This terminal is home base.</p>
+      <div class="cta reveal d3">
+        <a class="btn hot" href="#modules">Enter modules ↓</a>
+        <a class="btn ghost" href="https://github.com/MITfellow" target="_blank" rel="noopener">Open vault ↗</a>
       </div>
-      <button class="whisper reveal d4" id="whisper" aria-live="polite">hold me for a surprise → <span>0%</span></button>
-      <p class="typed" aria-label="Builder log"><span aria-hidden="true">$</span> <span id="typed"></span><span class="caret" aria-hidden="true">▍</span></p>
+
+      <div class="deck reveal d4">
+        <div class="orbit" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+        <div class="term">
+          <p class="term-h">MF-OS · builder log <span>● ● ●</span></p>
+          <p class="term-b"><span aria-hidden="true">❯</span> <span id="typed"></span><span class="caret" aria-hidden="true">▍</span></p>
+          <button class="warp" id="warp">HOLD TO WARP → <span>0%</span></button>
+          <p class="hint" id="warp-msg">charge to 100% to unlock sealed module 03</p>
+        </div>
+      </div>
     </section>
 
-    <section id="building" class="wrap section">
-      <div class="sec-head reveal">
-        <h2>What we’re building</h2>
-        <p>Three bets. One ships, two simmer.</p>
-      </div>
+    <section id="modules" class="wrap sec">
+      <div class="sec-h reveal"><h2>Active modules</h2><p>02 online · 01 sealed</p></div>
       <div class="grid">
-        <article class="card reveal">
-          <p class="num">01</p>
-          <h3>This page</h3>
-          <p>Zero-build portfolio on GitHub Pages. HTML + CSS + 20 lines of JS. Loads instantly, reads easily.</p>
-          <p class="tags"><span>live</span><span>pages</span></p>
-          <a href="https://mitfellow.github.io/" target="_blank" rel="noopener">Open live →</a>
+        <article class="mod reveal">
+          <p class="m-top"><span>MOD·01</span><span class="ok">● LIVE</span></p>
+          <h3>Surface terminal</h3>
+          <p>This page. Zero-build, light-speed, hosted on GitHub Pages. The 2200 skin over calm bones.</p>
+          <div class="bar"><i style="width:92%"></i></div>
+          <a href="https://mitfellow.github.io/" target="_blank" rel="noopener">Open →</a>
         </article>
-        <article class="card reveal d1">
-          <p class="num">02</p>
-          <h3>AI workforce kit</h3>
-          <p>Small agents for research, drafts, follow-ups. Human approves, agents do the grind.</p>
-          <p class="tags"><span>wip</span><span>agents</span></p>
-          <a href="https://github.com/MITfellow?tab=repositories" target="_blank" rel="noopener">Watch repos →</a>
+        <article class="mod reveal d1">
+          <p class="m-top"><span>MOD·02</span><span class="ok">● WIP</span></p>
+          <h3>Workforce kit</h3>
+          <p>Crew of small agents: scout, draft, chase. Human approves. Crew grinds.</p>
+          <div class="bar"><i style="width:54%"></i></div>
+          <a href="https://github.com/MITfellow?tab=repositories" target="_blank" rel="noopener">Watch vault →</a>
         </article>
-        <article class="card invert reveal d2">
-          <p class="num">03</p>
-          <h3>The surprise</h3>
-          <p id="surprise-text">Hold the button up top… something quiet happens here.</p>
-          <p class="tags"><span>???</span></p>
+        <article class="mod sealed reveal d2" id="mod3">
+          <p class="m-top"><span>MOD·03</span><span class="lock" id="mod3-state">◆ SEALED</span></p>
+          <h3 id="mod3-h">???</h3>
+          <p id="mod3-p">Sealed by temporal lock. Warp to unseal.</p>
+          <div class="bar"><i id="mod3-bar" style="width:6%"></i></div>
         </article>
       </div>
     </section>
 
-    <section id="now" class="wrap section now reveal">
-      <h2>Now</h2>
-      <ul>
-        <li><strong>Shipping:</strong> mitfellow.github.io v2 — this minimal surprise build</li>
-        <li><strong>Learning:</strong> in public, small commits, honest READMEs</li>
-        <li><strong>Open to:</strong> feedback, collabs, weird agent ideas</li>
+    <section id="systems" class="wrap sec reveal">
+      <h2>Ship systems</h2>
+      <ul class="sys-list">
+        <li><b>CMD</b> human command · taste + final call</li>
+        <li><b>CREW</b> agents · research / drafts / follow-ups</li>
+        <li><b>HULL</b> HTML · CSS · 30 lines JS · Pages hosting</li>
       </ul>
     </section>
 
-    <section id="contact" class="wrap section contact reveal">
-      <h2>Say hi</h2>
-      <p>Fastest: open an issue. Calmest: visit the profile.</p>
-      <div class="actions">
-        <a class="btn" href="https://github.com/MITfellow" target="_blank" rel="noopener">github.com/MITfellow</a>
-        <a class="btn ghost" href="https://x.com/MITfellow?s=20" target="_blank" rel="noopener">X / Twitter ↗</a>
+    <section id="uplink" class="wrap sec end reveal">
+      <h2>Open uplink</h2>
+      <p>Fastest channel: the vault. Quietest: X.</p>
+      <div class="cta">
+        <a class="btn hot" href="https://github.com/MITfellow" target="_blank" rel="noopener">github.com/MITfellow</a>
+        <a class="btn ghost" href="https://x.com/MITfellow?s=20" target="_blank" rel="noopener">X ↗</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap foot">
-      <small>© 2026 MITfellow · minimal + calm · on GitHub Pages</small>
-      <small><a href="#top">back to top ↑</a></small>
-    </div>
-  </footer>
+  <footer><div class="wrap foot"><small>© 2200 MITFELLOW · MF-OS 22.0 · EARTH→ORBIT</small><small><a href="#top">↑ TOP</a></small></div></footer>
 
 <script>
 (function(){
-  var clock = document.getElementById('clock');
-  function tick(){
-    try{
-      clock.textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}) + ' local · building';
-    }catch(e){ clock.textContent = 'building'; }
-  }
-  tick(); setInterval(tick, 20000);
-
-  var lines = ['ship small. learn in public.', 'agents do grind. humans decide.', 'minimal page. maximal calm.'];
-  var el = document.getElementById('typed'), li = 0, ci = 0, del = false;
-  function type(){
-    var s = lines[li];
-    el.textContent = s.slice(0, ci);
-    if(!del){ ci++; if(ci > s.length){ del = true; return void setTimeout(type, 1400); } }
-    else{ ci--; if(ci === 0){ del = false; li = (li+1)%lines.length; } }
-    setTimeout(type, del ? 22 : 46);
-  }
-  if(!matchMedia('(prefers-reduced-motion: reduce)').matches) type();
-  else el.textContent = lines[0];
-
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, {threshold: 0.12});
-  document.querySelectorAll('.reveal').forEach(function(n){ io.observe(n); });
-
-  var btn = document.getElementById('whisper'), pct = btn.querySelector('span'),
-      t = document.getElementById('surprise-text'), hold = null, p = 0;
-  function start(e){ e.preventDefault(); var t0 = Date.now();
-    hold = setInterval(function(){
-      p = Math.min(100, Math.round((Date.now()-t0)/12));
-      pct.textContent = p + '%';
-      document.body.classList.toggle('lit', p > 40);
-      if(p >= 100){ clearInterval(hold);
-        t.textContent = 'Surprise: less is more. You held on — most scroll past. The AI workforce we’re building works the same: quiet, patient, then done.';
-        btn.innerHTML = 'noted. thank you. ✓';
-      }
-    }, 50);
-  }
-  function cancel(){ clearInterval(hold); if(p < 100){ p = 0; pct.textContent = '0%'; document.body.classList.remove('lit'); } }
-  btn.addEventListener('pointerdown', start);
-  ['pointerup','pointerleave','pointercancel'].forEach(function(ev){ btn.addEventListener(ev, cancel); });
+  var c=document.getElementById('clock');
+  function tick(){try{c.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})+' LOCAL · 2200 LINK STABLE';}catch(e){c.textContent='LINK STABLE';}}
+  tick();setInterval(tick,20000);
+  var lines=['boot MF-OS 22.0 … ok','crew check: scout ✓ draft ✓ chase …','directive: ship small. stay calm.','uplink https://mitfellow.github.io … live'];
+  var el=document.getElementById('typed'),li=0,ci=0,del=false,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(rm){el.textContent=lines[0];}else{(function type(){var s=lines[li];el.textContent=s.slice(0,ci);
+    if(!del){ci++;if(ci>s.length){del=true;return void setTimeout(type,1300);}}
+    else{ci--;if(!ci){del=false;li=(li+1)%lines.length;}}
+    setTimeout(type,del?20:42);})();}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(n){io.observe(n);});
+  var cv=document.getElementById('stars'),x=cv.getContext('2d'),S=[],W,H;
+  function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
+  size();addEventListener('resize',size);
+  for(var i=0;i<130;i++)S.push({x:Math.random(),y:Math.random(),z:.2+Math.random()*.8,r:Math.random()*1.4+.3});
+  var warp=0;
+  function frame(){x.clearRect(0,0,W,H);
+    for(var k=0;k<S.length;k++){var s=S[k];
+      s.y-=s.z*(.0006+warp*.006);if(s.y<0)s.y=1;
+      x.globalAlpha=.25+s.z*.6;x.fillStyle=s.z>.7?'#9ff3ff':'#ffffff';
+      var px=s.x*W,py=s.y*H;
+      x.fillRect(px,py,s.r,s.r+warp*8*s.z);}
+    x.globalAlpha=1;if(!rm)requestAnimationFrame(frame);}
+  if(!rm)frame();else{S.forEach(function(s){x.fillStyle='#fff';x.fillRect(s.x*innerWidth,s.y*innerHeight,1,1);});}
+  var b=document.getElementById('warp'),pc=b.querySelector('span'),msg=document.getElementById('warp-msg'),h=null,p=0,t0=0;
+  function st(e){e.preventDefault();t0=Date.now();
+    h=setInterval(function(){p=Math.min(100,Math.round((Date.now()-t0)/14));pc.textContent=p+'%';warp=p/100;
+      document.getElementById('mod3-bar').style.width=(6+p*.9)+'%';
+      if(p>=100){clearInterval(h);document.body.classList.add('warped');
+        document.getElementById('mod3-state').textContent='◇ UNSEALED';
+        document.getElementById('mod3-h').textContent='Night-shift crew';
+        document.getElementById('mod3-p').textContent='While you sleep, the crew files, drafts and queues. You wake to decisions, not chores.';
+        msg.textContent='warp complete. welcome to 2200.';
+        b.innerHTML='WARP COMPLETE ✓';}},50);}
+  function cp(){clearInterval(h);if(p<100){p=0;warp=0;pc.textContent='0%';document.getElementById('mod3-bar').style.width='6%';}}
+  b.addEventListener('pointerdown',st);['pointerup','pointerleave','pointercancel'].forEach(function(ev){b.addEventListener(ev,cp);});
 })();
 </script>
 </body>
