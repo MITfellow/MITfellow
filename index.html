@@ -3,137 +3,165 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MITFELLOW // 2200 Uplink</title>
-  <meta name="description" content="MITfellow year-2200 uplink. Human intent, machine crew — AI workforce modules." />
+  <title>MITFELLOW — Building systems to understand intelligence</title>
+  <meta name="description" content="MITFellow (Sameer Choudhary). Public laboratory notebook: AI workforce, agents, experiments." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='white'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='black' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2' fill='black'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="scan" aria-hidden="true"></div>
+  <header class="rule-top" aria-hidden="true"></header>
 
-  <header class="hud">
-    <div class="wrap hud-in">
-      <a class="brand" href="#top">MITFELLOW<span>//2200</span></a>
-      <nav aria-label="Primary">
-        <a href="#modules">Modules</a>
-        <a href="#systems">Systems</a>
-        <a href="#uplink">Uplink</a>
-      </nav>
-      <p class="sys"><span class="pulse" aria-hidden="true"></span>SYS.ONLINE · <span id="clock">--:--</span></p>
-    </div>
-    <div class="beam" aria-hidden="true"></div>
-  </header>
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="mark" href="#top">MITFELLOW</a>
+      <span class="nav-links">
+        <a href="#building">Building</a>
+        <a href="#questions">Questions</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#contact">Contact</a>
+      </span>
+    </nav>
 
-  <main id="top">
-    <section class="hero wrap">
-      <p class="eyebrow reveal">◈ YEAR 2200 TRANSMISSION · SAMEER / MITFELLOW</p>
-      <h1>
-        <span class="reveal">HUMAN INTENT.</span>
-        <span class="reveal d1 neon">MACHINE <em>CREW.</em></span>
-      </h1>
-      <p class="sub reveal d2">AI workforce modules on active duty — research, drafts, follow-through. Humans command. Machines execute. This terminal is home base.</p>
-      <div class="cta reveal d3">
-        <a class="btn hot" href="#modules">Enter modules ↓</a>
-        <a class="btn ghost" href="https://github.com/MITfellow" target="_blank" rel="noopener">Open vault ↗</a>
-      </div>
+    <main id="top">
+      <section class="hero" aria-label="Introduction">
+        <svg class="diagram" width="220" height="64" viewBox="0 0 220 64" role="img" aria-label="Small system diagram: one node branching to three nodes">
+          <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.6">
+            <circle cx="110" cy="14" r="10"/><circle cx="110" cy="14" r="1.8" fill="currentColor" stroke="none"/>
+            <line x1="110" y1="24" x2="110" y2="38"/><line x1="50" y1="38" x2="170" y2="38"/>
+            <line x1="50" y1="38" x2="50" y2="48"/><line x1="110" y1="38" x2="110" y2="48"/><line x1="170" y1="38" x2="170" y2="48"/>
+            <circle cx="50" cy="54" r="4"/><circle cx="110" cy="54" r="4"/><circle cx="170" cy="54" r="4"/>
+          </g>
+        </svg>
+        <p class="kicker">ENGINEERING / AI / RESEARCH</p>
+        <h1>Building systems to understand intelligence.</h1>
+        <p class="lede">I build software, AI systems, and experiments around intelligence, automation, and the physical world. Most of what interests me starts as a question and becomes something I can build.</p>
+        <p class="meta">Sameer Choudhary · <a href="https://github.com/MITfellow">MITfellow</a> · currently: building an AI workforce</p>
+      </section>
 
-      <div class="deck reveal d4">
-        <div class="orbit" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
-        <div class="term">
-          <p class="term-h">MF-OS · builder log <span>● ● ●</span></p>
-          <p class="term-b"><span aria-hidden="true">❯</span> <span id="typed"></span><span class="caret" aria-hidden="true">▍</span></p>
-          <button class="warp" id="warp">HOLD TO WARP → <span>0%</span></button>
-          <p class="hint" id="warp-msg">charge to 100% to unlock sealed module 03</p>
-        </div>
-      </div>
-    </section>
+      <hr />
 
-    <section id="modules" class="wrap sec">
-      <div class="sec-h reveal"><h2>Active modules</h2><p>02 online · 01 sealed</p></div>
-      <div class="grid">
-        <article class="mod reveal">
-          <p class="m-top"><span>MOD·01</span><span class="ok">● LIVE</span></p>
-          <h3>Surface terminal</h3>
-          <p>This page. Zero-build, light-speed, hosted on GitHub Pages. The 2200 skin over calm bones.</p>
-          <div class="bar"><i style="width:92%"></i></div>
-          <a href="https://mitfellow.github.io/" target="_blank" rel="noopener">Open →</a>
+      <section id="building" aria-label="Currently building">
+        <h2>Currently building</h2>
+
+        <article class="proj">
+          <p class="num">01</p>
+          <h3>AI worker platform</h3>
+          <p>An AI system that connects to the real environment of a person or organization and performs long-running work across its systems.</p>
+          <dl>
+            <div><dt>Why</dt><dd>Most agents answer; few can be trusted with sustained work inside unfamiliar environments.</dd></div>
+            <div><dt>State</dt><dd>Early design. No public repo yet.</dd></div>
+          </dl>
         </article>
-        <article class="mod reveal d1">
-          <p class="m-top"><span>MOD·02</span><span class="ok">● WIP</span></p>
-          <h3>Workforce kit</h3>
-          <p>Crew of small agents: scout, draft, chase. Human approves. Crew grinds.</p>
-          <div class="bar"><i style="width:54%"></i></div>
-          <a href="https://github.com/MITfellow?tab=repositories" target="_blank" rel="noopener">Watch vault →</a>
+
+        <article class="proj">
+          <p class="num">02</p>
+          <h3>Ceres — desktop AI agent</h3>
+          <p>Desktop agent (Electron, JavaScript) with a real installer pipeline: Windows setup wizard, portable build, macOS and Linux targets.</p>
+          <dl>
+            <div><dt>Why</dt><dd>To study what an agent needs once it lives on a real machine instead of a chat window.</dd></div>
+            <div><dt>State</dt><dd>Working scaffold; installer builds, behavior early.</dd></div>
+            <div><dt>Repo</dt><dd><a href="https://github.com/HeliosLabAI/Ceres">HeliosLabAI/Ceres</a></dd></div>
+          </dl>
         </article>
-        <article class="mod sealed reveal d2" id="mod3">
-          <p class="m-top"><span>MOD·03</span><span class="lock" id="mod3-state">◆ SEALED</span></p>
-          <h3 id="mod3-h">???</h3>
-          <p id="mod3-p">Sealed by temporal lock. Warp to unseal.</p>
-          <div class="bar"><i id="mod3-bar" style="width:6%"></i></div>
+
+        <article class="proj">
+          <p class="num">03</p>
+          <h3>Agent platform frontend</h3>
+          <p>Full-stack agent-platform interface (TypeScript, React, Vite, Tailwind) — the control surface an AI workforce needs.</p>
+          <dl>
+            <div><dt>Why</dt><dd>Agents need inspectable interfaces, not black boxes.</dd></div>
+            <div><dt>State</dt><dd>Early scaffold.</dd></div>
+            <div><dt>Repo</dt><dd><a href="https://github.com/HeliosLabAI/superagent-full-stack">HeliosLabAI/superagent-full-stack</a></dd></div>
+          </dl>
         </article>
-      </div>
-    </section>
+      </section>
 
-    <section id="systems" class="wrap sec reveal">
-      <h2>Ship systems</h2>
-      <ul class="sys-list">
-        <li><b>CMD</b> human command · taste + final call</li>
-        <li><b>CREW</b> agents · research / drafts / follow-ups</li>
-        <li><b>HULL</b> HTML · CSS · 30 lines JS · Pages hosting</li>
-      </ul>
-    </section>
+      <hr />
 
-    <section id="uplink" class="wrap sec end reveal">
-      <h2>Open uplink</h2>
-      <p>Fastest channel: the vault. Quietest: X.</p>
-      <div class="cta">
-        <a class="btn hot" href="https://github.com/MITfellow" target="_blank" rel="noopener">github.com/MITfellow</a>
-        <a class="btn ghost" href="https://x.com/MITfellow?s=20" target="_blank" rel="noopener">X ↗</a>
-      </div>
-    </section>
-  </main>
+      <section id="questions" aria-label="Questions">
+        <h2>Questions I'm working on</h2>
+        <ul class="questions">
+          <li>How does intelligence emerge from simple systems?</li>
+          <li>Can AI systems operate inside unfamiliar environments?</li>
+          <li>What must an AI worker understand before it can do real work reliably?</li>
+          <li>How can machines learn from interaction, not only static datasets?</li>
+          <li>How does intelligence move from software into the physical world?</li>
+          <li>How should long-running systems remember, verify, and improve their work?</li>
+        </ul>
+      </section>
 
-  <footer><div class="wrap foot"><small>© 2200 MITFELLOW · MF-OS 22.0 · EARTH→ORBIT</small><small><a href="#top">↑ TOP</a></small></div></footer>
+      <hr />
 
-<script>
-(function(){
-  var c=document.getElementById('clock');
-  function tick(){try{c.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})+' LOCAL · 2200 LINK STABLE';}catch(e){c.textContent='LINK STABLE';}}
-  tick();setInterval(tick,20000);
-  var lines=['boot MF-OS 22.0 … ok','crew check: scout ✓ draft ✓ chase …','directive: ship small. stay calm.','uplink https://mitfellow.github.io … live'];
-  var el=document.getElementById('typed'),li=0,ci=0,del=false,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(rm){el.textContent=lines[0];}else{(function type(){var s=lines[li];el.textContent=s.slice(0,ci);
-    if(!del){ci++;if(ci>s.length){del=true;return void setTimeout(type,1300);}}
-    else{ci--;if(!ci){del=false;li=(li+1)%lines.length;}}
-    setTimeout(type,del?20:42);})();}
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(n){io.observe(n);});
-  var cv=document.getElementById('stars'),x=cv.getContext('2d'),S=[],W,H;
-  function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
-  size();addEventListener('resize',size);
-  for(var i=0;i<130;i++)S.push({x:Math.random(),y:Math.random(),z:.2+Math.random()*.8,r:Math.random()*1.4+.3});
-  var warp=0;
-  function frame(){x.clearRect(0,0,W,H);
-    for(var k=0;k<S.length;k++){var s=S[k];
-      s.y-=s.z*(.0006+warp*.006);if(s.y<0)s.y=1;
-      x.globalAlpha=.25+s.z*.6;x.fillStyle=s.z>.7?'#9ff3ff':'#ffffff';
-      var px=s.x*W,py=s.y*H;
-      x.fillRect(px,py,s.r,s.r+warp*8*s.z);}
-    x.globalAlpha=1;if(!rm)requestAnimationFrame(frame);}
-  if(!rm)frame();else{S.forEach(function(s){x.fillStyle='#fff';x.fillRect(s.x*innerWidth,s.y*innerHeight,1,1);});}
-  var b=document.getElementById('warp'),pc=b.querySelector('span'),msg=document.getElementById('warp-msg'),h=null,p=0,t0=0;
-  function st(e){e.preventDefault();t0=Date.now();
-    h=setInterval(function(){p=Math.min(100,Math.round((Date.now()-t0)/14));pc.textContent=p+'%';warp=p/100;
-      document.getElementById('mod3-bar').style.width=(6+p*.9)+'%';
-      if(p>=100){clearInterval(h);document.body.classList.add('warped');
-        document.getElementById('mod3-state').textContent='◇ UNSEALED';
-        document.getElementById('mod3-h').textContent='Night-shift crew';
-        document.getElementById('mod3-p').textContent='While you sleep, the crew files, drafts and queues. You wake to decisions, not chores.';
-        msg.textContent='warp complete. welcome to 2200.';
-        b.innerHTML='WARP COMPLETE ✓';}},50);}
-  function cp(){clearInterval(h);if(p<100){p=0;warp=0;pc.textContent='0%';document.getElementById('mod3-bar').style.width='6%';}}
-  b.addEventListener('pointerdown',st);['pointerup','pointerleave','pointercancel'].forEach(function(ev){b.addEventListener(ev,cp);});
-})();
-</script>
+      <section id="experiments" aria-label="Experiments">
+        <h2>Experiments</h2>
+        <article class="exp">
+          <p class="num">EXP 001</p>
+          <h3>Desktop agent runtime</h3>
+          <p><strong>Question:</strong> what breaks first when an agent lives on a machine, not in a demo?<br />
+          <strong>Method:</strong> Electron shell, agent loop, packaged builds with logs kept in-repo.<br />
+          <strong>Result:</strong> installer works; behavior early, under test. — <a href="https://github.com/HeliosLabAI/Ceres">Ceres</a></p>
+        </article>
+        <article class="exp">
+          <p class="num">EXP 002</p>
+          <h3>Interface scaffolds</h3>
+          <p><strong>Question:</strong> what is the smallest honest surface for observing an agent?<br />
+          <strong>Method:</strong> Vite + React + Tailwind scaffolds, iterated quickly.<br />
+          <strong>Result:</strong> structure only, no further claims. — <a href="https://github.com/HeliosLabAI/veritas-core">veritas-core</a> · <a href="https://github.com/HeliosLabAI/research-cockpit">research-cockpit</a></p>
+        </article>
+      </section>
+
+      <hr />
+
+      <section aria-label="Research map">
+        <h2>Research map</h2>
+        <svg class="map" viewBox="0 0 720 460" role="img" aria-label="Research map: intelligence at the center, joined to AI agents, systems, and science, all pointing toward the physical world.">
+          <g font-family="Menlo, Consolas, monospace" font-size="14" letter-spacing="3">
+            <g stroke="currentColor" stroke-width="1" opacity="0.7">
+              <line x1="360" y1="96" x2="360" y2="150"/>
+              <line x1="360" y1="150" x2="150" y2="230"/><line x1="360" y1="150" x2="360" y2="230"/><line x1="360" y1="150" x2="570" y2="230"/>
+              <line x1="150" y1="270" x2="150" y2="320"/><line x1="360" y1="270" x2="360" y2="320"/><line x1="570" y1="270" x2="570" y2="320"/>
+              <line x1="150" y1="320" x2="360" y2="392"/><line x1="570" y1="320" x2="360" y2="392"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="252" y="56" width="216" height="44" rx="2"/><rect x="70" y="230" width="160" height="40" rx="2"/>
+              <rect x="280" y="230" width="160" height="40" rx="2"/><rect x="490" y="230" width="160" height="40" rx="2"/>
+              <rect x="248" y="372" width="224" height="44" rx="2"/>
+            </g>
+            <g fill="currentColor" text-anchor="middle">
+              <text x="360" y="83">INTELLIGENCE</text><text x="150" y="255">AI / AGENTS</text>
+              <text x="360" y="255">SYSTEMS</text><text x="570" y="255">SCIENCE</text>
+              <text x="360" y="399">PHYSICAL WORLD</text>
+            </g>
+          </g>
+        </svg>
+      </section>
+
+      <hr />
+
+      <section aria-label="Log and tools">
+        <h2>Log</h2>
+        <table>
+          <tbody>
+            <tr><td>2026-09</td><td>MITFellow profile and site — public notebook opens</td></tr>
+            <tr><td>2026-08/09</td><td>Agent platform frontend scaffold (HeliosLabAI)</td></tr>
+            <tr><td>2026-04</td><td>Ceres desktop agent with installer pipeline (HeliosLabAI)</td></tr>
+            <tr><td>2026-03</td><td>Early interface scaffolds (HeliosLabAI)</td></tr>
+          </tbody>
+        </table>
+        <h2 class="tight">Tools</h2>
+        <p class="tools">JavaScript · TypeScript · React · Vite · Electron · Node.js · Tailwind CSS · HTML/CSS · Git — used where the work required it.</p>
+        <h2 class="tight">About</h2>
+        <p>I'm Sameer Choudhary, an engineer and independent builder exploring AI, intelligent systems, and unusual computational ideas. Helios Lab is the open research direction behind some earlier experiments — early, unfinished, documented as it goes.</p>
+      </section>
+
+      <hr />
+
+      <section id="contact" aria-label="Contact">
+        <h2>Contact</h2>
+        <p><a href="https://github.com/MITfellow">GitHub</a> · <a href="https://mitfellow.github.io/">Website</a> · <a href="https://x.com/MITfellow?s=20">X</a></p>
+        <p class="end">Still building.</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
